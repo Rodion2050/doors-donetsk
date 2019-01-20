@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/common.js"></script>
 </head>
 
 <body>
@@ -33,37 +31,42 @@
     </div>
     </div>
 
-    <div class="container ">
+    <div class="container about-company">
         <h2>
-            <span class="main">ПОПУЛЯРНЫЕ</span> МОДЕЛИ</h2>
-        <div class="popular-models">
-            <div class="doors-wrapper">
-                <div class="door">
-                    <img class="door-image" src="images/door1.png">
-                    <p class="door-name text-center">Дверь Stripes</p>
-                    <p class="door-price text-center">7 500 РУБ.</p>
-                </div>
-                <div class="door">
-                    <img class="door-image" src="images/door2.png">
-                    <p class="door-name text-center">Дверь Minimalist</p>
-                    <p class="door-price text-center">9 500 РУБ.</p>
-                </div>
+            <span class="main">О КОМПАНИИ</span> В ЦИФРАХ</h2>
+        <div class="row">
+            <div class="col-md-4 col-lg-3 info-with-image-in-border">
+                <img src="images/img-back1.png" />
+                <img src="images/thumb-up.png" class="image-in-border" />
+                <span class="text-wrapper">
+                    <span class="num">758</span>
+                </span>
+                <span class="text-wrapper">
+                    <span class="text">довольных клиентов</span>
+                </span>
             </div>
-            <div class="doors-wrapper">
-                <div class="door">
-                    <img class="door-image" src="images/door3.png">
-                    <p class="door-name text-center">Дверь Luxury</p>
-                    <p class="door-price text-center">35 000 РУБ.</p>
-                </div>
-                <div class="door">
-                    <img class="door-image" src="images/door4.png">
-                    <p class="door-name text-center">Дверь Guard</p>
-                    <p class="door-price text-center">27 500 РУБ.</p>
-                </div>
+            <div class="col-md-4 col-lg-3 info-with-image-in-border">
+                <img src="images/img-back1.png" />
+                <img src="images/calendar.png" class="image-in-border" />
+                <span class="text-wrapper">
+                    <span class="num num1">10</span>
+                </span>
+                <span class="text-wrapper">
+                    <span class="text">лет на рынке</span>
+                </span>
+            </div>
+            <div class="col-md-4 col-lg-3 info-with-image-in-border">
+                <img src="images/img-back1.png" />
+                <img src="images/money.png" class="image-in-border" />
+                <span class="text-wrapper">
+                    <span class="num num1">15</span>
+                </span>
+                <span class="text-wrapper">
+                    <span class="text">лет гарантия</span>
+                </span>
             </div>
         </div>
     </div>
-    
     <div class="container-fluid reasons-to-choose-background">
         <div class="container reasons-to-choose">
             <h2>
@@ -121,11 +124,10 @@
             <div class="image-block-text-inner">
                 <h2>Заполните форму</h2>
                 <p>чтобы узнать, сколько будет стоить ваша дверь.</p>
-                <form method="POST" id="form">
-                    <input type="hidden" name="DATA[TITLE]" value="Заявка с лендинга №1"/>
-                    <input type="text" class="form-control my-form-control" placeholder="Ваше имя*" name="DATA[NAME]" required />
-                    <input type="tel" class="form-control my-form-control" placeholder="Ваш телефон*" name="DATA[PHONE_WORK]" required />
-                    <input type="email" class="form-control my-form-control" placeholder="Ваш email*" name="DATA[EMAIL_WORK]" required />
+                <form>
+                    <input type="text" class="form-control my-form-control" placeholder="Ваше имя*" name="name" />
+                    <input type="tel" class="form-control my-form-control" placeholder="Ваш телефон*" name="phone" />
+                    <input type="email" class="form-control my-form-control" placeholder="Ваш email*" name="email" />
                     <button type="submit" class="btn green-button">Получить расчет</button>
                 </form>
 
@@ -133,7 +135,36 @@
         </div>
     </div>
 
-    
+    <div class="container ">
+        <h2>
+            <span class="main">ПОПУЛЯРНЫЕ</span> МОДЕЛИ</h2>
+        <div class="popular-models">
+            <div class="doors-wrapper">
+                <div class="door">
+                    <img class="door-image" src="images/door1.png">
+                    <p class="door-name text-center">Дверь Stripes</p>
+                    <p class="door-price text-center">7 500 РУБ.</p>
+                </div>
+                <div class="door">
+                    <img class="door-image" src="images/door2.png">
+                    <p class="door-name text-center">Дверь Minimalist</p>
+                    <p class="door-price text-center">9 500 РУБ.</p>
+                </div>
+            </div>
+            <div class="doors-wrapper">
+                <div class="door">
+                    <img class="door-image" src="images/door3.png">
+                    <p class="door-name text-center">Дверь Luxury</p>
+                    <p class="door-price text-center">35 000 РУБ.</p>
+                </div>
+                <div class="door">
+                    <img class="door-image" src="images/door4.png">
+                    <p class="door-name text-center">Дверь Guard</p>
+                    <p class="door-price text-center">27 500 РУБ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="map">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af66e4ef8136c15a2e5b1d23b81564af4531e1a09aede30eabf8fc8352c481d70&amp;width=100%25&amp;height=560&amp;lang=ru_UA&amp;scroll=true"></script>
         <div class="map-descr-wrapper">
